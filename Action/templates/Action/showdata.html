@@ -22,7 +22,7 @@
 					<td>{{i.c_email}}</td>
 					<td>{{i.c_gender}}</td>
 					<td>{{i.c_complaint}}</td>
-					<td><a href="{% url 'edit' %}">Edit</a> <a href="{% url 'delete' %}">Delete</a></td>
+					<td><a href="{% url 'edit' i.id %}">Edit</a> <a href="{% url 'delete' i.id %}">Delete</a></td>
 				</tr>
 				{% endfor %}
 			</table>

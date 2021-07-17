@@ -37,6 +37,7 @@ def showdata(req):
 	data=Contact_complaint.objects.all()
 
 	return render(req,'Action/showdata.html',{"data":data})
+
 def edit(req,id):
 	data=Contact_complaint.objects.get(id=id)
 	print(data)
@@ -57,4 +58,4 @@ def update(req,id):
 def delete(req,id):
 	data=Contact_complaint.objects.get(id=id)
 	data.delete()
-	return render(req,'Action/index.html')
+	return redirect('/Action/showdata')
