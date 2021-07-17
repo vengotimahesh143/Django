@@ -1,0 +1,60 @@
+{% extends 'Action/index.html' %}
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home::</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  {% block body %}
+	<h1 class="text-primary">Mahesh</h1>
+	<h1 class="text-success">Mahesh</h1>
+	<h1 class="text-warning">Mahesh</h1>
+	<h1 class="text-important">Mahesh</h1>
+	<h1 class="text-danger">Mahesh</h1>
+
+	<h2 class="text-info text-center">Hello</h2>
+	<button class="btn btn-success">submit</button>
+	<img class="img-thumbnail" src="{% static 'images/2.jpg' %}">
+
+	<div class="container">
+  <h2>Bordered Table</h2>
+  <p>The .table-bordered class adds borders to a table:</p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}
+
+</body>
+</html>
